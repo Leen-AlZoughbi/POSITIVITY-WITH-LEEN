@@ -1,0 +1,108 @@
+
+  
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <!--    -->
+    <!--     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="trivia.css" rel="stylesheet" type="text/css" />
+  
+  
+    <!--   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> -->
+  </head>
+  
+  <body>
+  
+  
+  
+  
+    <ul class="nav">
+      <li class="nav-item"><a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+    <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+  </svg></a></li>
+      <li class="nav-item">
+        
+        <a class="nav-link active" aria-current="page" href="index.html">POSITIVITY</a>
+      </li>
+          <li class="nav-item">
+        <a class="nav-link" href="psychology.html">Psychology and Motivation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="quotes.html">QUOTES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">TRIVIA QUESTIONS</a>
+      </li>
+  
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">ABOUT US</a>
+      </li>
+    </ul>
+    <div class="description">
+      <h1>Here is a mini-quiz to spend your free time on </h1>
+      <br>
+      <h1>ENJOYY</h1>
+    </div>
+  
+    <div class="dropdowns_position">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Categories
+        </button>
+        <ul class="dropdown-menu">
+  
+          <li><button class="dropdown-item" type="button" onclick="category(this.innerText)">Arts and Literature</button>
+          </li>
+          <li><button class="dropdown-item" type="button" onclick="category(this.innerText)">Film & TV</button></li>
+          <li><button class="dropdown-item" type="button" onclick="category(this.innerText)">Food & Drink</button></li>
+          <li><button class="dropdown-item" type="button" onclick="category(this.innerText)">General Knowledge</button>
+          </li>
+          <li><button class="dropdown-item" type="button" onclick="category(this.innerText)">Geography</button></li>
+          <li><button class="dropdown-item" type="button" onclick="category(this.innerText)">History</button></li>
+          <li><button class="dropdown-item" type="button" onclick="category(this.innerText)">Music</button></li>
+          <li><button class="dropdown-item" type="button" onclick="category(this.innerText)">Science</button></li>
+          <li><button class="dropdown-item" type="button" onclick="category(this.innerText)">Society & Culture</button>
+          </li>
+          <li><button class="dropdown-item" type="button" onclick="category(this.innerText)">Sport & Leisure</button></li>
+  
+        </ul>
+      </div>
+  
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Difficulty
+        </button>
+        <ul class="dropdown-menu">
+  
+          <li><button class="dropdown-item" type="button" onclick="difficulty(this.innerText)">Easy</button></li>
+          <li><button class="dropdown-item" type="button" onclick="difficulty(this.innerText)">Medium</button></li>
+          <li><button class="dropdown-item" type="button" onclick="difficulty(this.innerText)">Hard</button></li>
+  
+        </ul>
+      </div>
+      <button class="submit">Submit</button>
+    </div>
+    <div class="container1">
+      <div class="card"> </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+      <!--
+    This script places a badge on your repl's full-browser view back to your repl's cover
+    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+    teal, blue, blurple, magenta, pink!
+    -->
+      <script src="trivia.js" theme="dark" position="bottom-right"></script>
+  </body>
+  
+  </html>

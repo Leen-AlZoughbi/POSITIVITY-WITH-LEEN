@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans');
+
+body {
+   display: flex;
+   justify-content: center;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.page {
+    width: 100%;
+    margin: 0 auto;
+    border: 0.1em dimgray solid;
+}
+
+header {
+    text-align: center;
+    background-color: #95BDFF;
+    padding: 1em;
+}
+
+h1 {
+    color: rgba(223, 116, 74, 0.95);
+    font-size: 4.5em;
+    margin-bottom: 0.2em;
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+blockquote {
+    font-family: 'Dancing Script', cursive;
+    color: dimgray;
+    font-weight: bold;
+    display: inline;
+    font-size: 2em;
+}
+
+.content {
+    background-color: whitesmoke;
+    padding: 2em;
+}
+
+.content p {
+    margin-top: 0;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+}
+
+.audio {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.audio iframe, .audio img {
+    padding: 1em;
+    max-height: 20em;
+}
+.audio iframe {
+    width: 25em;
+}
+
+.audio img {
+    width: 25em;
+}
+
+p a {
+    color: rgb(223, 116, 74);;
+}
+
+footer {
+    background-color: whitesmoke;
+    color: rgb(223, 116, 74);
+    text-align: center;
+    padding-bottom: 2em;
+}
